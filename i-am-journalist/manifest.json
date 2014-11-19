@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Journalist Best Friend",
+	"version": "1.0",
+	"description": "Let me invesplain something to you, buddy",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["zepto.min.js", "app.js"],
+			"run_at": "document_end"
+		}
+	]
+}
